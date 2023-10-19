@@ -1,0 +1,54 @@
+.navigation {
+  padding: 0 $padding-large;
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-black;
+
+  & span {
+    color: $color-primary;
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+  }
+
+  &__logo {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Satisfy", cursive;
+    color: $color-gray-light;
+    font-size: 3.8rem;
+  }
+
+  &__link {
+    gap: 4rem;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:link,
+    &:visited {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: $color-gray-light;
+    }
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}

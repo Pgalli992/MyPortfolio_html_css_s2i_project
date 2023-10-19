@@ -2,8 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pg-myportfolio.netlify.app/"">
+    <meta property="og:title" content="Paolo's portfolio" />
+    <meta property="og:image" content="assets/img/Screenshot" />
+    <meta property="og:description" content="Il mio Portfolio - s2i project" />
+    <meta property="og:locale" content="it_IT" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navigation">
+      <a class="navigation__logo">Paolo<span>.</span></a>
+      <ul class="navigation__nav">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Who I am</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">My interests</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">My experience</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__img-box">
+        <picture class="header__img">
+          <source
+            srcset="
+              assets/img/header_img_small-1x.webp 1x,
+              assets/img/header_img_small-2x.webp 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="
+              assets/img/header_img_big-1x.webp 1x,
+              assets/img/header_img_big-2x.webp 2x
+            "
+            alt="Web Developer's Photo"
+            class=""
+          />
+        </picture>
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading__primary">Hi, I'm Paolo Galli</h1>
+        <h3 class="heading__tertiary">Frontend Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis hic
+          voluptates sapiente eius eligendi magnam praesentium maxime! Aliquid
+          tenetur autem magni sit, itaque maiores quidem sed voluptatum
+          repudiandae molestias consequuntur blanditiis dolorem amet eveniet
+          recusandae at impedit cumque temporibus praesentium dolorum. Ducimus
+          vitae dignissimos hic!
+        </p>
+      </div>
+      <div class="header__btns-box">
+        <a href="#" class="btn btn__cta">Contact me</a>
+        <a href="#" class="btn btn__more">More...</a>
+      </div>
+      <!-- <div class="header__social-icon">
+          <ul class="header__social-links">
+            <li>
+              <a class="header__social-link" href="#"
+                ><ion-icon
+                  class="header__social-icon"
+                  name="logo-instagram"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="header__social-link" href="#"
+                ><ion-icon
+                  class="header__social-icon"
+                  name="logo-facebook"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="header__social-link" href="#"
+                ><ion-icon
+                  class="header__social-icon"
+                  name="logo-twitter"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div> -->
+    </header>
+    <main class="section section__main">
+      <div class="section__main_coding">
+        <div class="section__main_coding--img-box"></div>
+        <div class="section__main_coding--text-box"></div>
+      </div>
+      <div class="section__main_blockchain">
+        <div class="section__main_blockchain--text-box"></div>
+        <div class="section__main_blockchain--img-box"></div>
+      </div>
+      <div class="section__main_crypto">
+        <div class="section__main_crypto--img-box"></div>
+        <div class="section__main_crypto--text-box"></div>
+      </div>
+    </main>
+  </body>
 </html>

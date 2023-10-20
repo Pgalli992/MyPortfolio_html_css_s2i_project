@@ -1,0 +1,57 @@
+.section__interests {
+  background-color: $color-grey-light;
+  padding: 10rem 0;
+
+  &-title {
+    padding-left: $padding-large;
+    text-transform: uppercase;
+    color: $color-primary-dark;
+    font-size: $font-size-regular;
+    text-align: start;
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+      content: " ";
+      display: block;
+      background-color: $color-primary;
+      position: absolute;
+      top: 50%;
+      left: 8.5rem;
+      transform: translate(-50%, -50%);
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  &-box {
+    max-width: 70vw;
+    min-height: min-content;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+
+    &:not(:last-child) {
+      margin-bottom: 15rem;
+    }
+  }
+  &--text-box {
+    color: $color-grey;
+    padding: 5rem 10rem;
+    font-size: $font-size-regular;
+    align-items: center;
+    line-height: 1.8;
+
+    & * h3 {
+      color: $color-grey-dark;
+    }
+  }
+  &--img-box {
+    display: flex;
+    font-size: 20rem;
+    color: $color-primary;
+    align-items: center;
+  }
+  &_coding {
+  }
+}

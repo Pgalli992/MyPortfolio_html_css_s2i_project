@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is a Portfolio developed for start2impact projects"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pg-myportfolio.netlify.app/"">
     <meta property="og:title" content="Paolo's portfolio" />
     <meta property="og:image" content="assets/img/Screenshot" />
     <meta property="og:description" content="Il mio Portfolio - s2i project" />
     <meta property="og:locale" content="it_IT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,7 +54,7 @@
               assets/img/header_img_small-1x.webp 1x,
               assets/img/header_img_small-2x.webp 2x
             "
-            media="(max-width: 37.5em)"
+            media="(max-width: 1200px)"
           />
           <img
             srcset="
@@ -57,7 +62,6 @@
               assets/img/header_img_big-2x.webp 2x
             "
             alt="Web Developer's Photo"
-            class=""
           />
         </picture>
       </div>
@@ -106,19 +110,71 @@
           </ul>
         </div> -->
     </header>
-    <main class="section section__main">
-      <div class="section__main_coding">
-        <div class="section__main_coding--img-box"></div>
-        <div class="section__main_coding--text-box"></div>
+    <section class="section section__interests">
+      <div class="section__interests-title">
+        <span>My interest</span>
       </div>
-      <div class="section__main_blockchain">
-        <div class="section__main_blockchain--text-box"></div>
-        <div class="section__main_blockchain--img-box"></div>
+      <div class="section__interests-box section__interests_coding">
+        <div
+          class="section__interests--img-box section__interests_coding--img-box"
+        >
+          <ion-icon name="code-slash-outline"></ion-icon>
+        </div>
+        <div
+          class="section__interests--text-box section__interests_coding--text-box"
+        >
+          <h3 class="heading__tertiary">Web development</h3>
+          <p>
+            Web development, also known as website development, refers to the
+            tasks associated with creating, building, and maintaining websites
+            and web applications that run online on a browser. It may, however,
+            also include web design, web programming, and database management.
+            The basic tools involved in web development are programming
+            languages called HTML (Hypertext Markup Language), CSS (Cascading
+            Style Sheets), and JavaScript. There are, however, a number of other
+            programs used to “manage” or facilitate the construction of sites
+            that would otherwise have to be done “from scratch” by writing code.
+          </p>
+        </div>
       </div>
-      <div class="section__main_crypto">
-        <div class="section__main_crypto--img-box"></div>
-        <div class="section__main_crypto--text-box"></div>
+      <div class="section__interests-box section__interests_blockchain">
+        <div
+          class="section__interests--text-box section__interests_blockchain--text-box"
+        >
+          <h3 class="heading__tertiary">Blockchain</h3>
+          <p>
+            Blockchain technology is a decentralized, distributed ledger that
+            stores the record of ownership of digital assets. Any data stored on
+            blockchain is unable to be modified, making the technology a
+            legitimate disruptor for industries like payments, cybersecurity and
+            healthcare.
+          </p>
+        </div>
+        <div
+          class="section__interests--img-box section__interests_blockchain--img-box"
+        >
+          <ion-icon name="logo-apple-ar"></ion-icon>
+        </div>
       </div>
-    </main>
+      <div class="section__interests-box section__interests_crypto">
+        <div
+          class="section__interests--img-box section__interests_crypto--img-box"
+        >
+          <ion-icon name="logo-bitcoin"></ion-icon>
+        </div>
+        <div
+          class="section__interests--text-box section__interests_crypto--text-box"
+        >
+          <h3 class="heading__tertiary">Cryptocurrencies</h3>
+          <p>
+            Cryptocurrency, sometimes called crypto-currency or crypto, is any
+            form of currency that exists digitally or virtually and uses
+            cryptography to secure transactions. Cryptocurrencies don't have a
+            central issuing or regulating authority, instead using a
+            decentralized system to record transactions and issue new units.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

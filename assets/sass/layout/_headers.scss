@@ -28,7 +28,7 @@
   &__text-box {
     display: flex;
     flex-direction: column;
-    color: $color-gray-light;
+    color: $color-grey-light;
     text-align: left;
     justify-content: end;
     margin-right: 18rem;
@@ -36,7 +36,7 @@
   }
 
   & p {
-    font-size: 1.7rem;
+    font-size: $font-size-regular;
     line-height: 1.5;
   }
 
@@ -54,6 +54,6 @@
   &__social-icon {
     height: 1.8rem;
     width: 1.8rem;
-    color: $color-gray-light;
+    color: $color-grey-light;
   }
 }

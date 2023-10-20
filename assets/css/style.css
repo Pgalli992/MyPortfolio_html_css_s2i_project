@@ -4,7 +4,7 @@
     transform: translateX(-110px); }
   70% {
     opacity: 1;
-    transform: translateX(5px); }
+    transform: translateX(7px); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -15,7 +15,7 @@
     transform: translateX(110px); }
   70% {
     opacity: 1;
-    transform: translateX(-5px); }
+    transform: translateX(-7px); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -26,7 +26,7 @@
     transform: translateY(-35px); }
   70% {
     opacity: 1;
-    transform: translateY(5px); }
+    transform: translateY(7px); }
   100% {
     opacity: 1;
     transform: translateY(0px); } }
@@ -46,7 +46,7 @@ body {
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.9rem #3d0107; }
+  box-shadow: 0 0 0 0.9rem #430108; }
 
 .heading__primary {
   font-size: 8rem; }
@@ -54,7 +54,7 @@ body {
 .heading__tertiary {
   font-size: 4rem;
   color: #cb0417;
-  margin-bottom: 5rem; }
+  margin-bottom: 3rem; }
 
 .navigation {
   padding: 0 10rem;
@@ -137,6 +137,49 @@ body {
     height: 1.8rem;
     width: 1.8rem;
     color: #f8f9fa; }
+
+.section__interests {
+  background-color: #f8f9fa;
+  padding: 10rem 0; }
+  .section__interests-title {
+    padding-left: 10rem;
+    text-transform: uppercase;
+    color: #430108;
+    font-size: 1.7rem;
+    text-align: start;
+    font-weight: 700;
+    position: relative; }
+    .section__interests-title::before {
+      content: " ";
+      display: block;
+      background-color: #cb0417;
+      position: absolute;
+      top: 50%;
+      left: 8.5rem;
+      transform: translate(-50%, -50%);
+      width: 1.2rem;
+      height: 1.2rem; }
+  .section__interests-box {
+    max-width: 70vw;
+    min-height: min-content;
+    margin: 0 auto;
+    display: flex;
+    align-self: center; }
+    .section__interests-box:not(:last-child) {
+      margin-bottom: 15rem; }
+  .section__interests--text-box {
+    color: #72787f;
+    padding: 5rem 10rem;
+    font-size: 1.7rem;
+    align-items: center;
+    line-height: 1.8; }
+    .section__interests--text-box * h3 {
+      color: #040505; }
+  .section__interests--img-box {
+    display: flex;
+    font-size: 20rem;
+    color: #cb0417;
+    align-items: center; }
 
 .btn {
   cursor: pointer;

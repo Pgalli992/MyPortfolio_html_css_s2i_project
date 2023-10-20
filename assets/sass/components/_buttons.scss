@@ -12,7 +12,7 @@
     padding: 1.2rem 2.4rem;
     border-radius: 9px;
     border: none;
-    color: $color-gray-light;
+    color: $color-grey-light;
   }
 
   &__cta:link,
@@ -22,18 +22,18 @@
 
   &__cta:hover,
   &__Cta:active {
-    background-color: $color-gray-light;
+    background-color: $color-grey-light;
     color: $color-primary;
   }
 
   &__more:link,
   &__more:visited {
-    background-color: $color-gray-dark;
+    background-color: $color-grey-dark;
   }
   &__more:hover,
   &__more:active {
-    background-color: $color-gray-light;
-    color: $color-gray-dark;
+    background-color: $color-grey-light;
+    color: $color-grey-dark;
   }
 
   &:not(:last-child) {

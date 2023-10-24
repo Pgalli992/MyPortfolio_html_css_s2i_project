@@ -1,10 +1,13 @@
 .btn {
-  cursor: pointer;
-  font-family: inherit;
-  transition: all 0.3s;
-
+  &,
   &:link,
   &:visited {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
     display: inline-block;
     text-decoration: none;
     font-size: 2rem;
@@ -15,25 +18,23 @@
     color: $color-grey-light;
   }
 
-  &__cta:link,
-  &__cta:visited {
+  &__submit {
     background-color: $color-primary;
+    &:hover,
+    &:active {
+      background-color: $color-grey-light;
+      color: $color-primary;
+      transform: scale(1.1);
+    }
   }
 
-  &__cta:hover,
-  &__Cta:active {
-    background-color: $color-grey-light;
-    color: $color-primary;
-  }
-
-  &__more:link,
-  &__more:visited {
+  &__reset {
     background-color: $color-grey-dark;
-  }
-  &__more:hover,
-  &__more:active {
-    background-color: $color-grey-light;
-    color: $color-grey-dark;
+    &:hover,
+    &:active {
+      background-color: $color-grey-light;
+      color: $color-grey-dark;
+    }
   }
 
   &:not(:last-child) {

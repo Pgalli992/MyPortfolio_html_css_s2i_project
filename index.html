@@ -9,7 +9,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pg-myportfolio.netlify.app/"">
     <meta property="og:title" content="Paolo's portfolio" />
-    <meta property="og:image" content="assets/img/Screenshot" />
+    <meta
+      property="og:image"
+      content="https://github.com/Pgalli992/Project_html_css-s2i/blob/master/assets/img/Screenshot.png"
+    />
     <meta property="og:description" content="Il mio Portfolio - s2i project" />
     <meta property="og:locale" content="it_IT" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +31,7 @@
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script defer src="script.js"></script>
+    <script defer src="assets/js/script.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -77,9 +80,11 @@
           vitae dignissimos hic!
         </p>
       </div>
-      <div class="header__btns-box">
-        <a href="#" class="btn btn__cta">Contact me</a>
-        <a href="#" class="btn btn__more">More...</a>
+      <div class="header__main--nav-box">
+        <a href="#" class="header__main--nav header__main--nav-cta"
+          >Contact me</a
+        >
+        <a href="#" class="header__main--nav header__main--nav-more">More...</a>
       </div>
       <!-- <div class="header__social-icon">
           <ul class="header__social-links">
@@ -139,6 +144,11 @@
       </div>
       <div class="section__interests-box section__interests_blockchain">
         <div
+          class="section__interests--img-box section__interests_blockchain--img-box"
+        >
+          <ion-icon name="logo-apple-ar"></ion-icon>
+        </div>
+        <div
           class="section__interests--text-box section__interests_blockchain--text-box"
         >
           <h3 class="heading__tertiary">Blockchain</h3>
@@ -149,11 +159,6 @@
             legitimate disruptor for industries like payments, cybersecurity and
             healthcare.
           </p>
-        </div>
-        <div
-          class="section__interests--img-box section__interests_blockchain--img-box"
-        >
-          <ion-icon name="logo-apple-ar"></ion-icon>
         </div>
       </div>
       <div class="section__interests-box section__interests_crypto">
@@ -174,6 +179,103 @@
             decentralized system to record transactions and issue new units.
           </p>
         </div>
+      </div>
+    </section>
+    <section class="section__form">
+      <div class="section__form_container">
+        <div class="section__form--title-box">
+          <h3 class="heading__tertiary">Contact <span>Me</span></h3>
+        </div>
+        <div class="section__form--input-box">
+          <form name="contact me" class="cta__form">
+            <div class="form__group-name">
+              <div class="form__group">
+                <label for="firstname" class="form__label">First name</label>
+                <input
+                  type="text"
+                  class="form__input form__input-firstname"
+                  id="firstname"
+                  placeholder="es. John Smith"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label for="lastname" class="form__label">Last name</label>
+                <input
+                  type="text"
+                  class="form__input form__input-lastname"
+                  id="lastname"
+                  placeholder="Last name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input
+                type="email"
+                class="form__input form__input-email"
+                id="email"
+                placeholder="example@email.com"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea
+                type="text"
+                class="form__input form__input-message"
+                id="message"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+          </form>
+          <div class="section__form--btn-box">
+            <button class="btn btn__submit">Submit</button>
+            <button class="btn btn__reset">Reset</button>
+          </div>
+        </div>
+        <!-- <div class="section__form_right">
+          <span>Contact info:</span>
+          <div class="section__form_contact">
+            <div class="section__form_contact-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+            <div class="section__form_contact-info">
+              <p>
+                <span>Address:</span>321-297 Kent St,Sydney NSW 2000, Australia
+              </p>
+            </div>
+          </div>
+          <div class="section__form_contact">
+            <div class="section__form_contact-icon">
+              <ion-icon name="mail-open"></ion-icon>
+            </div>
+            <div class="section__form_contact-info">
+              <p><span>Email:</span>info@webdevelopers.io</p>
+            </div>
+          </div>
+          <div class="section__form_contact">
+            <div class="section__form_contact-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            <div class="section__form_contact-info">
+              <p><span>Phone:</span>+61 008 555 610</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="section__form_contact">
+            <div class="section__form_contact-info">
+              <span>Socials</span>
+              <div class="section__form_contact-icon">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
   </body>

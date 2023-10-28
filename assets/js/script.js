@@ -40,14 +40,14 @@ btnContactMe.addEventListener("click", function (e) {
 
 // Functions
 
-function clearForm() {
+const clearForm = function (e) {
   inputFirstName.value =
     inputLastName.value =
     inputEmail.value =
     inputMessage.value =
       "";
   inputFirstName.focus();
-}
+};
 
 // Reveal section
 
@@ -95,7 +95,7 @@ allInterest.forEach(function (interest) {
 
 // Reset button function
 
-btnReset.addEventListener("click", clearForm());
+btnReset.addEventListener("click", clearForm);
 
 // Sticky navigation
 const obs = new IntersectionObserver(
@@ -122,7 +122,6 @@ obs.observe(header);
 
 // Send mail function
 
-// btnSubmit.addEventListener("click", clearForm());
 btnSubmit.addEventListener("click", function (e) {
   const variables = {
     from_name: document.getElementById("firstname").value,
@@ -133,6 +132,7 @@ btnSubmit.addEventListener("click", function (e) {
   emailjs
     .send("contact_service", "portfolio_contact_form", variables)
     .then(function (res) {
-      alert("Success!" + res.status);
+      alert("Success!");
     });
 });
+btnSubmit.addEventListener("click", clearForm);

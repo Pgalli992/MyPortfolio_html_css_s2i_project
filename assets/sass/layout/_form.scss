@@ -18,10 +18,16 @@
   }
 
   &_container {
-    max-width: 50vw;
-    max-height: 65vh;
-    margin: 0 auto;
+    min-height: 105vh;
     padding: 5rem 10rem;
+    position: relative;
+    &-abs {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 45vw;
+    }
   }
 
   &--btn-box {

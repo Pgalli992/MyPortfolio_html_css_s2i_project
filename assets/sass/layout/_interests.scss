@@ -31,6 +31,7 @@
     margin: 0 auto;
     display: flex;
     align-self: center;
+    opacity: 1;
 
     &:nth-child(3) {
       flex-direction: row-reverse;
@@ -42,6 +43,15 @@
     &:hover > .section__interests--img-box {
       transform: scale(1.3);
     }
+  }
+  &_coding {
+    transition: all 1s;
+  }
+  &_blockchain {
+    transition: all 1s 0.5s;
+  }
+  &_crypto {
+    transition: all 1s 1s;
   }
   &--text-box {
     color: $color-grey;
@@ -61,7 +71,13 @@
     align-items: center;
     transition: all 0.3s;
   }
+  &_crypto--img-box {
+    transform: rotate(13.88deg);
+  }
 }
-.section__interests_crypto--img-box {
-  transform: rotate(13.88deg);
+
+// Styling hidden class for the reveal section function
+.interest--hidden {
+  opacity: 0;
+  transform: translateY(10rem);
 }

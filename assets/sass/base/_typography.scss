@@ -1,9 +1,15 @@
-.heading__primary {
-  font-size: 8rem;
-}
+.heading {
+  &__primary {
+    font-size: 8rem;
+  }
+  &__secondary {
+    font-size: 4rem;
+    color: $color-primary;
+  }
 
-.heading__tertiary {
-  font-size: 4rem;
-  color: $color-primary;
-  margin-bottom: 3rem;
+  &__tertiary {
+    font-size: 3.6rem;
+    color: $color-primary;
+    margin-bottom: 3rem;
+  }
 }

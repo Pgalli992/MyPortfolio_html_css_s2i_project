@@ -1,0 +1,102 @@
+.section__skills {
+  width: 100vw;
+  min-height: 60rem;
+  max-height: 80vh;
+  padding: $padding-medium $padding-large;
+
+  &_container {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5.5rem;
+  }
+
+  &_col {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    &-title {
+      margin-bottom: $margin-big;
+      text-align: center;
+    }
+  }
+}
+
+.skill {
+  &__container {
+    justify-content: center;
+    &:not(:last-child) {
+      margin-bottom: $margin-smaller;
+    }
+    &_programming {
+      max-height: calc((100% - #{$padding-medium} * 2) / 4);
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-grey-dark;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: $margin-smaller;
+    & span {
+      font-size: 1rem;
+      letter-spacing: normal;
+    }
+  }
+  &__bar {
+    width: 100%;
+    background-color: $color-grey-light-2;
+    box-shadow: $shadow-regular;
+    color: $color-grey-light;
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    &_value {
+      padding: 1.2rem 2.4rem;
+      background-color: $color-primary;
+
+      // Programming skills
+      &-html {
+        width: 90%;
+      }
+      &-css {
+        width: 85%;
+      }
+      &-js {
+        width: 35%;
+      }
+      &-vba {
+        width: 60%;
+      }
+
+      // Languages
+      &-ita {
+        width: 100%;
+      }
+
+      &-eng {
+        width: 70%;
+      }
+
+      // Soft skills
+      &-solve {
+        width: 95%;
+      }
+
+      &-communicate {
+        width: 95%;
+      }
+
+      &-organize {
+        width: 95%;
+      }
+
+      &-learn {
+        width: 90%;
+      }
+    }
+  }
+}

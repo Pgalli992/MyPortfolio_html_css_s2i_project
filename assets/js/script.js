@@ -49,6 +49,19 @@ const clearForm = function (e) {
   inputFirstName.focus();
 };
 
+const sendMail = function (e) {
+  const variables = {
+    from_name: document.getElementById("firstname").value,
+    from_lastname: document.getElementById("lastname").value,
+    message: document.getElementById("message").value,
+    email: document.getElementById("email").value,
+  };
+  emailjs
+    .send("contact_service", "portfolio_contact_form", variables)
+    .then(function (res) {
+      alert("Success!");
+    });
+};
 // Reveal section
 
 /*
@@ -93,8 +106,7 @@ allInterest.forEach(function (interest) {
   interestCrypto.classList.add("interest--hidden");
 });
 
-// Reset button function
-
+// Reset button functionn
 btnReset.addEventListener("click", clearForm);
 
 // Sticky navigation
@@ -120,19 +132,6 @@ const obs = new IntersectionObserver(
 );
 obs.observe(header);
 
-// Send mail function
-
-btnSubmit.addEventListener("click", function (e) {
-  const variables = {
-    from_name: document.getElementById("firstname").value,
-    from_lastname: document.getElementById("lastname").value,
-    message: document.getElementById("message").value,
-    email: document.getElementById("email").value,
-  };
-  emailjs
-    .send("contact_service", "portfolio_contact_form", variables)
-    .then(function (res) {
-      alert("Success!");
-    });
-});
+// Event hanndler
+btnSubmit.addEventListener("click", sendMail);
 btnSubmit.addEventListener("click", clearForm);

@@ -4,13 +4,7 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 3rem;
-  background-image: linear-gradient(
-    to left top,
-    #290105 0%,
-    rgba(1, 1, 0, 1) 40%,
-    rgba(1, 1, 0, 1) 100%
-  );
-
+  background-image: $background-default;
   &__img-box {
     width: 70%;
     border-radius: 20%;

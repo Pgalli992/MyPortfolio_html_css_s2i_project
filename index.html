@@ -9,10 +9,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pg-myportfolio.netlify.app/"">
     <meta property="og:title" content="Paolo's portfolio" />
-    <meta
-      property="og:image"
-      content="https://github.com/Pgalli992/Project_html_css-s2i/blob/master/assets/img/Screenshot.png"
-    />
+    <meta property="og:image" content="assets/img/Screenshot.png" />
     <meta property="og:description" content="Il mio Portfolio - s2i project" />
     <meta property="og:locale" content="it_IT" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +28,8 @@
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/shared.js"></script>
+    <script defer src="assets/js/scriptIndex.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -50,18 +48,28 @@
         >Paolo<span>.</span></a
       >
       <ul class="navigation__nav">
-        <li class="navigation__item">
-          <a href="#who_i_am" name="who_i_am" class="navigation__link"
+        <li class="navigation__item navigation__item-who">
+          <a
+            href="#who_i_am"
+            name="who_i_am"
+            class="navigation__link navigation__link-who"
             >Who I am</a
           >
         </li>
-        <li class="navigation__item">
-          <a href="#my_interests" name="my_interests" class="navigation__link"
+        <li class="navigation__item navigation__item-interests">
+          <a
+            href="#my_interests"
+            name="my_interests"
+            class="navigation__link navigation__link-interests"
             >My interests</a
           >
         </li>
-        <li class="navigation__item">
-          <a href="experience.html" class="navigation__link">My experience</a>
+        <li class="navigation__item navigation__item-experience">
+          <a
+            href="experience.html"
+            class="navigation__link navigation__link-experience"
+            >My experience</a
+          >
         </li>
       </ul>
     </nav>
@@ -88,23 +96,27 @@
         <h1 class="heading__primary">Hi, I'm Paolo Galli</h1>
         <h3 class="heading__tertiary">Frontend Developer</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis hic
-          voluptates sapiente eius eligendi magnam praesentium maxime! Aliquid
-          tenetur autem magni sit, itaque maiores quidem sed voluptatum
-          repudiandae molestias consequuntur blanditiis dolorem amet eveniet
-          recusandae at impedit cumque temporibus praesentium dolorum. Ducimus
-          vitae dignissimos hic!
+          My name is Paolo, I'm a front-end developer based in Perugia, Italy. I
+          have a passion for all things of technology and design, from software
+          engineering to UI/UX. I have hunger for learning new things and am
+          always tryng to stretch my abilities. I love making new websites which
+          are easy to use and can be accessed by anyone.<br /><br />
+          Find out more by clicking on button below.
         </p>
       </div>
       <div class="header__btns-box">
-        <a href="#contact_form" class="header__main--nav header__main--nav-cta"
+        <a href="#contact_form" class="header__main--btn header__main--btn-cta"
           >Contact me</a
         >
-        <a href="#" class="header__main--nav header__main--nav-more">More...</a>
+        <a
+          href="experience.html"
+          class="header__main--btn header__main--btn-more"
+          >More...</a
+        >
       </div>
     </header>
     <section class="section section__interests" id="my_interests">
-      <div class="section__interests-title">
+      <div class="section__title section__title-left section__title-interests">
         <span>My interest</span>
       </div>
       <div class="section__interests-box section__interests_coding">
@@ -169,7 +181,7 @@
         </div>
       </div>
     </section>
-    <section class="section__form" id="contact_form">
+    <section class="section section__form" id="contact_form">
       <div class="section__form_container">
         <div class="section__form_container-abs">
           <div class="section__form--title-box">
@@ -185,7 +197,7 @@
                     type="text"
                     class="form__input form__input-firstname"
                     id="firstname"
-                    placeholder="es. John Smith"
+                    placeholder="First Name"
                     required
                   />
                 </div>

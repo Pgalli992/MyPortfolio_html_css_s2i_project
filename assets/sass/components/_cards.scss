@@ -1,7 +1,7 @@
 .card {
   perspective: 150rem;
   position: relative;
-  height: 55vh;
+  min-height: 55vh;
 
   &__container {
     width: calc((100% - #{$margin-medium} * 2) / 3);
@@ -31,13 +31,40 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media only screen and (max-width: $bp-large) {
+          font-size: 15rem;
+        }
       }
     }
     &_back {
       transform: rotateY(180deg);
+      padding: $padding-medium $padding-small;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      &-title {
+        margin-bottom: $margin-medium;
+
+        @media only screen and (max-width: $bp-large) {
+          margin-bottom: $margin-small;
+        }
+
+        &:first-child {
+          margin-bottom: $margin-small;
+        }
+      }
+
+      &-text {
+        font-size: $font-size-medium;
+        @media only screen and (max-width: $bp-large) {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
-
   &:hover &__side_front {
     transform: rotateY(-180deg);
   }

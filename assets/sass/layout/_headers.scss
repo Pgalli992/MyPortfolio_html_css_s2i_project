@@ -5,6 +5,21 @@
   grid-template-columns: 2fr 3fr;
   gap: 3rem;
   background-image: $background-default;
+
+  @media only screen and (max-width: $bp-large) {
+    gap: 2.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1.5rem;
+    gap: 2.2rem;
+  }
+
+  .sticky & {
+    // Adding the hight of navigation as a margin, to prevent the page 'jumping' when the navbar become 'sticky'
+    margin-top: 6rem;
+  }
+
   &__img-box {
     width: 70%;
     border-radius: 20%;
@@ -27,10 +42,13 @@
     justify-content: end;
     margin-right: 18rem;
     animation: moveInTop 0.7s ease-out;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-right: 9rem;
+    }
   }
 
   & p {
-    font-size: $font-size-regular;
     line-height: 1.5;
   }
 
@@ -38,6 +56,13 @@
     justify-self: start;
     margin-top: 3rem;
     animation: moveInRight 0.7s ease-out;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 2.5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 2rem;
+    }
   }
   &__social-links {
     list-style: none;
@@ -51,7 +76,7 @@
     color: $color-grey-light;
   }
 
-  &__main--nav {
+  &__main--btn {
     cursor: pointer;
     font-family: inherit;
     transition: all 0.3s;
@@ -66,6 +91,13 @@
       border-radius: 9px;
       border: none;
       color: $color-grey-light;
+
+      @media only screen and (max-width: $bp-large) {
+        padding: 1rem 2rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        padding: 0.8rem 1.6rem;
+      }
     }
 
     &-cta:link,

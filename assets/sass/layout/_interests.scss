@@ -2,29 +2,6 @@
   background-color: $color-grey-light;
   padding: 10rem 0;
 
-  &-title {
-    padding-left: 12.5rem;
-    padding-bottom: 3rem;
-    text-transform: uppercase;
-    color: $color-primary-dark;
-    font-size: $font-size-regular;
-    text-align: start;
-    font-weight: 700;
-    position: relative;
-
-    &::before {
-      content: " ";
-      display: block;
-      background-color: $color-primary;
-      position: absolute;
-      top: 23%;
-      left: 10.8rem;
-      transform: translate(-50%, -50%);
-      width: 1.2rem;
-      height: 1.2rem;
-    }
-  }
-
   &-box {
     max-width: 70vw;
     min-height: min-content;
@@ -32,6 +9,13 @@
     display: flex;
     align-self: center;
     opacity: 1;
+
+    @media only screen and (max-width: $bp-large) {
+      max-width: 85vw;
+    }
+    @media only screen and (max-width: $bp-large) {
+      max-width: 85vw;
+    }
 
     &:nth-child(3) {
       flex-direction: row-reverse;
@@ -56,9 +40,11 @@
   &--text-box {
     color: $color-grey;
     padding: 5rem 10rem;
-    font-size: $font-size-regular;
-    align-items: center;
     line-height: 1.8;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 3.5rem 7rem;
+    }
 
     & * h3 {
       color: $color-grey-dark;
@@ -70,6 +56,10 @@
     color: $color-primary;
     align-items: center;
     transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 18rem;
+    }
   }
   &_crypto--img-box {
     transform: rotate(13.88deg);

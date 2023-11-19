@@ -5,6 +5,11 @@
   background-color: $color-grey-light;
   color: $color-grey-dark;
 
+  @media only screen and (max-width: $bp-large) {
+    font-size: $font-size-smaller;
+    padding: 3.5rem 7rem;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -49,11 +54,12 @@
       max-width: 20rem;
       line-height: 1.6;
       text-align: start;
+
+      @media only screen and (max-width: $bp-large) {
+        max-width: 18rem;
+      }
       & a {
         color: $color-grey-dark;
-      }
-      & p {
-        font-size: $font-size-small;
       }
     }
   }
@@ -66,6 +72,10 @@
     &-link {
       font-size: $font-size-regular;
       transition: all 0.3s;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: $font-size-small;
+      }
       &:hover {
         color: $color-primary;
       }

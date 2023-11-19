@@ -6,6 +6,10 @@
   justify-content: space-between;
   background-color: $color-black;
 
+  @media only screen and (max-width: $bp-large) {
+    padding: 0 $padding-medium;
+  }
+
   .sticky & {
     position: fixed;
     top: 0;
@@ -23,8 +27,6 @@
     gap: 4rem;
   }
   &__link {
-    gap: 4rem;
-    justify-content: space-between;
     text-decoration: none;
     transition: all 0.3s;
 
@@ -33,6 +35,10 @@
       font-size: 1.8rem;
       font-weight: 400;
       color: $color-grey-light;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.5rem;
+      }
     }
     &:hover,
     &:active {

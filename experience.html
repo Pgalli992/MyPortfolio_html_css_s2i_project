@@ -31,7 +31,8 @@
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <!-- <script defer src="assets/js/script.js"></script> -->
+    <script defer src="assets/js/shared.js"></script>
+    <script defer src="assets/js/scriptExperience.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -40,60 +41,72 @@
         >Paolo<span>.</span></a
       >
       <ul class="navigation__nav">
-        <li class="navigation__item">
-          <a href="index.html#who_i_am" class="navigation__link">Who I am</a>
-        </li>
-        <li class="navigation__item">
-          <a href="index.html#my_interests" class="navigation__link"
-            >My interests</a
+        <li class="navigation__item navigation__item-timeline">
+          <a href="#timeline" class="navigation__link navigation__link-timeline"
+            >Timeline</a
           >
         </li>
-        <li class="navigation__item">
-          <a href="experience.html" class="navigation__link">My experience</a>
+        <li class="navigation__item navigation__item-hobbies">
+          <a href="#hobbies" class="navigation__link navigation__link-hobbies"
+            >My hobbies</a
+          >
+        </li>
+        <li class="navigation__item navigation__item-skills">
+          <a href="#skills" class="navigation__link navigation__link-skills"
+            >My skills</a
+          >
         </li>
       </ul>
     </nav>
-    <section class="timeline">
-      <div class="timeline__line">
-        <div class="timeline__container timeline__container-left">
-          <div class="timeline__content">
+    <section class="section section__timeline timeline" id="timeline">
+      <div class="section__title section__title-left section__title-timeline">
+        <span>Timeline</span>
+      </div>
+      <div class="section__timeline_line">
+        <div
+          class="section__timeline_container section__timeline_container-left"
+        >
+          <div class="section__timeline_content">
             <h2 class="heading__secondary">2023</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-              eaque temporibus, tenetur delectus tempora cupiditate velit. Magni
-              sunt neque ex!
+              Follow 2 years of Self-studyng, I enrolled to a master's degree<br />
+              in front-end development at <span>start2impact</span> university.
             </p>
           </div>
         </div>
-        <div class="timeline__container timeline__container-right">
-          <div class="timeline__content">
+        <div
+          class="section__timeline_container section__timeline_container-right"
+        >
+          <div class="section__timeline_content">
+            <h2 class="heading__secondary">2021</h2>
+            <p>Beginning as Store manager at Unieuro S.p.a.</p>
+            After 8 years as sales operator.
+          </div>
+        </div>
+        <div
+          class="section__timeline_container section__timeline_container-left"
+        >
+          <div class="section__timeline_content">
             <h2 class="heading__secondary">2013</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-              aut optio est cumque id sed!
-            </p>
+            <p>Employed as Sales operator at Unieuro S.p.a.</p>
           </div>
         </div>
-        <div class="timeline__container timeline__container-left">
-          <div class="timeline__content">
+        <div
+          class="section__timeline_container section__timeline_container-right"
+        >
+          <div class="section__timeline_content">
             <h2 class="heading__secondary">2012</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, a
-              ipsa. Ducimus harum minima earum.
+              Moving to Sydney NSW, Australia.<br />
+              After graduation i decided to move to Sydney with a friend.
             </p>
-          </div>
-        </div>
-        <div class="timeline__container timeline__container-right">
-          <div class="timeline__content">
-            <h2 class="heading__secondary">2016</h2>
-            <p>Lorem ipsum..</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="section__hobbies">
+    <section class="section section__hobbies" id="hobbies">
       <div class="section__hobbies_container">
-        <div class="section__hobbies-title">
+        <div class="section__title section__title-right section__title-hobbies">
           <span>My hobbies</span>
         </div>
         <div class="section__hobbies_row">
@@ -104,33 +117,63 @@
                   <ion-icon name="desktop-outline"></ion-icon>
                 </div>
               </div>
-              <div class="card__side card__side_back">back</div>
+              <div class="card__side card__side_back">
+                <h3 class="heading__tertiary card__side_back-title">
+                  Information technology
+                </h3>
+                <p class="card__side_back-text">
+                  Since an early age, I've always had a strong passion for
+                  technology equipment. I was gifted my first computer when i
+                  was 6 years old, since than I've always been passionate about
+                  software development and related technologies.
+                </p>
+              </div>
             </div>
           </div>
           <div class="card__container">
             <div class="card">
               <div class="card__side card__side_front">
                 <div class="card__side card__side_front-img">
-                  <ion-icon name="earth-outline"></ion-icon>
+                  <ion-icon name="airplane-outline"></ion-icon>
                 </div>
               </div>
-              <div class="card__side card__side_back">back</div>
+              <div class="card__side card__side_back">
+                <h3 class="heading__tertiary card__side_back-title">
+                  Traveling
+                </h3>
+                <p class="card__side_back-text">
+                  Traveling has always been one of my greatest passions. I love
+                  learning about the cultures of the places i visit.
+                </p>
+              </div>
             </div>
           </div>
           <div class="card__container">
             <div class="card">
               <div class="card__side card__side_front">
                 <div class="card__side card__side_front-img">
-                  <ion-icon name="nutrition-outline"></ion-icon>
+                  <ion-icon name="football-outline"></ion-icon>
                 </div>
               </div>
-              <div class="card__side card__side_back">back</div>
+              <div class="card__side card__side_back">
+                <h3 class="heading__tertiary card__side_back-title">
+                  Fitness & sport
+                </h3>
+                <p class="card__side_back-text">
+                  I'm a young and healthy person. Whenever i get some leasure
+                  time, I take my cycle and go for a ride. I love team player
+                  games with my friends.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section__skills">
+    <section class="section section__skills" id="skills">
+      <div class="section__title section__title-left section__title-skills">
+        <span>My skills</span>
+      </div>
       <div class="section__skills_container">
         <div class="section__skills_col section__skills_col-1">
           <div class="section__skills_col-title">
@@ -203,7 +246,7 @@
             </div>
           </div>
           <div class="skill__container skill__container_soft-skill">
-            <div class="skill__title">Self-learinig</div>
+            <div class="skill__title">Self-learninig</div>
             <div class="skill__bar">
               <div class="skill__bar_value skill__bar_value-learn"></div>
             </div>

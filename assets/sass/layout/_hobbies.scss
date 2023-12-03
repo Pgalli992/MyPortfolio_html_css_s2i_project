@@ -1,0 +1,14 @@
+.section__hobbies {
+  min-height: 100vh;
+  background-image: $background-default;
+  padding: $padding-large 0;
+
+  &_container {
+    max-width: 85vw;
+    margin: 0 auto;
+  }
+
+  &_row {
+    display: flex;
+  }
+}

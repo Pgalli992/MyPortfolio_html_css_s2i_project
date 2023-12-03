@@ -1,0 +1,11 @@
+.main__logo {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Satisfy", cursive;
+  color: $color-grey-light;
+  font-size: 3.8rem;
+
+  & span {
+    color: $color-primary;
+  }
+}

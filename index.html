@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is a Portfolio developed for start2impact projects"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pg-myportfolio.netlify.app/"">
+    <meta property="og:title" content="Paolo's portfolio" />
+    <meta property="og:image" content="assets/img/Screenshot.png" />
+    <meta property="og:description" content="Il mio Portfolio - s2i project" />
+    <meta property="og:locale" content="it_IT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script defer src="assets/js/shared.js"></script>
+    <script defer src="assets/js/scriptIndex.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("xVioOKFV6TPbPhutb");
+      })();
+    </script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <a href="index.html" class="navigation__logo main__logo"
+        >Paolo<span>.</span></a
+      >
+      <ul class="navigation__nav">
+        <li class="navigation__item navigation__item-who">
+          <a
+            href="#who_i_am"
+            name="who_i_am"
+            class="navigation__link navigation__link-who"
+            >Who I am</a
+          >
+        </li>
+        <li class="navigation__item navigation__item-interests">
+          <a
+            href="#my_interests"
+            name="my_interests"
+            class="navigation__link navigation__link-interests"
+            >My interests</a
+          >
+        </li>
+        <li class="navigation__item navigation__item-experience">
+          <a
+            href="experience.html"
+            class="navigation__link navigation__link-experience"
+            >My experience</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="header" id="who_i_am">
+      <div class="header__img-box">
+        <picture class="header__img">
+          <source
+            srcset="
+              assets/img/header_img_small-1x.webp 1x,
+              assets/img/header_img_small-2x.webp 2x
+            "
+            media="(max-width: 1200px)"
+          />
+          <img
+            srcset="
+              assets/img/header_img_big-1x.webp 1x,
+              assets/img/header_img_big-2x.webp 2x
+            "
+            alt="Web Developer's Photo"
+          />
+        </picture>
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading__primary">Hi, I'm Paolo Galli</h1>
+        <h3 class="heading__tertiary">Frontend Developer</h3>
+        <p>
+          My name is Paolo, I'm a front-end developer based in Perugia, Italy. I
+          have a passion for all things of technology and design, from software
+          engineering to UI/UX. I have hunger for learning new things and am
+          always tryng to stretch my abilities. I love making new websites which
+          are easy to use and can be accessed by anyone.<br /><br />
+          Find out more by clicking on button below.
+        </p>
+      </div>
+      <div class="header__btns-box">
+        <a href="#contact_form" class="header__main--btn header__main--btn-cta"
+          >Contact me</a
+        >
+        <a
+          href="experience.html"
+          class="header__main--btn header__main--btn-more"
+          >More...</a
+        >
+      </div>
+    </header>
+    <section class="section section__interests" id="my_interests">
+      <div class="section__title section__title-left section__title-interests">
+        <span>My interest</span>
+      </div>
+      <div class="section__interests-box section__interests_coding">
+        <div
+          class="section__interests--img-box section__interests_coding--img-box"
+        >
+          <ion-icon name="code-slash-outline"></ion-icon>
+        </div>
+        <div
+          class="section__interests--text-box section__interests_coding--text-box"
+        >
+          <h3 class="heading__tertiary">Web development</h3>
+          <p>
+            Web development, also known as website development, refers to the
+            tasks associated with creating, building, and maintaining websites
+            and web applications that run online on a browser. It may, however,
+            also include web design, web programming, and database management.
+            The basic tools involved in web development are programming
+            languages called HTML (Hypertext Markup Language), CSS (Cascading
+            Style Sheets), and JavaScript. There are, however, a number of other
+            programs used to “manage” or facilitate the construction of sites
+            that would otherwise have to be done “from scratch” by writing code.
+          </p>
+        </div>
+      </div>
+      <div class="section__interests-box section__interests_blockchain">
+        <div
+          class="section__interests--img-box section__interests_blockchain--img-box"
+        >
+          <ion-icon name="logo-apple-ar"></ion-icon>
+        </div>
+        <div
+          class="section__interests--text-box section__interests_blockchain--text-box"
+        >
+          <h3 class="heading__tertiary">Blockchain</h3>
+          <p>
+            Blockchain technology is a decentralized, distributed ledger that
+            stores the record of ownership of digital assets. Any data stored on
+            blockchain is unable to be modified, making the technology a
+            legitimate disruptor for industries like payments, cybersecurity and
+            healthcare.
+          </p>
+        </div>
+      </div>
+      <div class="section__interests-box section__interests_crypto">
+        <div
+          class="section__interests--img-box section__interests_crypto--img-box"
+        >
+          <ion-icon name="logo-bitcoin"></ion-icon>
+        </div>
+        <div
+          class="section__interests--text-box section__interests_crypto--text-box"
+        >
+          <h3 class="heading__tertiary">Cryptocurrencies</h3>
+          <p>
+            Cryptocurrency, sometimes called crypto-currency or crypto, is any
+            form of currency that exists digitally or virtually and uses
+            cryptography to secure transactions. Cryptocurrencies don't have a
+            central issuing or regulating authority, instead using a
+            decentralized system to record transactions and issue new units.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section section__form" id="contact_form">
+      <div class="section__form_container">
+        <div class="section__form_container-abs">
+          <div class="section__form--title-box">
+            <h3 class="heading__tertiary">Contact <span>Me</span></h3>
+          </div>
+          <div class="section__form--input-box">
+            <form name="contactMe" class="cta__form">
+              <input type="hidden" name="contact_number" />
+              <div class="form__group-name">
+                <div class="form__group">
+                  <label for="firstname" class="form__label">First name</label>
+                  <input
+                    type="text"
+                    class="form__input form__input-firstname"
+                    id="firstname"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="form__group">
+                  <label for="lastname" class="form__label">Last name</label>
+                  <input
+                    type="text"
+                    class="form__input form__input-lastname"
+                    id="lastname"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input
+                  type="email"
+                  class="form__input form__input-email"
+                  id="email"
+                  placeholder="example@email.com"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label for="message" class="form__label">Message</label>
+                <textarea
+                  type="text"
+                  class="form__input form__input-message"
+                  id="message"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+            </form>
+            <div class="section__form--btn-box">
+              <button class="btn btn__submit">Submit</button>
+              <button class="btn btn__reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col footer__col-sections">
+          <p class="footer__heading">Sections</p>
+          <nav class="footer__nav">
+            <ul class="footer__links">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Who I am</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">My interests</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">My experience</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__col-address">
+          <p class="footer__heading">My contact info</p>
+          <address class="contacts">
+            <p class="address">21-297 Kent St,Sydney NSW 2000, Australia</p>
+            <p>
+              <a class="footer__link" href="tel:415-201-6370">+61 008 555 610</a
+              ><br />
+              <a class="footer__link" href="mailto:p.galli@myportfolio.com"
+                >p.galli@myportfolio.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="footer__col footer__col-logo">
+          <a class="main__logo footer__logo">Paolo<span>.</span></a>
+          <ul class="footer__social-links">
+            <li>
+              <a
+                class="footer__social-link"
+                href="https://www.instagram.com/p.galli/"
+                ><ion-icon
+                  class="footer__social-icon"
+                  name="logo-instagram"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com/paolo.galli.7315/"
+                ><ion-icon
+                  class="footer__social-icon"
+                  name="logo-facebook"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="https://github.com/Pgalli992"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright © <span class="year">2023</span> by Paolo Galli, Inc. All
+            rights reserved. Designed by Paolo Galli.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

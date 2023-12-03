@@ -1,0 +1,74 @@
+.card {
+  perspective: 150rem;
+  position: relative;
+  min-height: 55vh;
+
+  &__container {
+    width: calc((100% - #{$margin-medium} * 2) / 3);
+    padding-top: $padding-medium;
+    &:not(:last-child) {
+      margin-right: $margin-medium;
+    }
+  }
+
+  &__side {
+    width: 100%;
+    height: 55vh;
+    background-color: $color-grey-light;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+    box-shadow: 0 1.5rem 4rem rgba($color-grey-light, 0.15);
+    &_front {
+      &-img {
+        font-size: 20rem;
+        color: $color-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: $bp-large) {
+          font-size: 15rem;
+        }
+      }
+    }
+    &_back {
+      transform: rotateY(180deg);
+      padding: $padding-medium $padding-small;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      &-title {
+        margin-bottom: $margin-medium;
+
+        @media only screen and (max-width: $bp-large) {
+          margin-bottom: $margin-small;
+        }
+
+        &:first-child {
+          margin-bottom: $margin-small;
+        }
+      }
+
+      &-text {
+        font-size: $font-size-medium;
+        @media only screen and (max-width: $bp-large) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  &:hover &__side_front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side_back {
+    transform: rotateY(0);
+  }
+}

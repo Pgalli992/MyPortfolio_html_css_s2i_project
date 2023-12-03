@@ -1,0 +1,53 @@
+.section {
+  padding: $padding-small;
+
+  &__timeline {
+    padding-top: 0;
+  }
+
+  &__title {
+    margin-bottom: $margin-medium;
+    padding-left: 12.5rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    color: $color-primary-dark;
+    font-size: $font-size-regular;
+    text-align: start;
+    font-weight: 700;
+    position: relative;
+    @media only screen and (max-width: $bp-large) {
+      padding-left: 6.5rem;
+    }
+
+    &::before {
+      content: " ";
+      display: block;
+      background-color: $color-primary;
+      position: absolute;
+      top: 23%;
+      transform: translate(-50%, -50%);
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    &-left::before {
+      left: 10.8rem;
+      @media only screen and (max-width: $bp-large) {
+        left: 5.1rem;
+      }
+    }
+
+    &-right::before {
+      right: 10.8rem;
+    }
+
+    &-hobbies {
+      text-align: end;
+      color: $color-grey-light;
+
+      &::before {
+        right: 10.8rem;
+      }
+    }
+  }
+}

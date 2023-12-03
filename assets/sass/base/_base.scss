@@ -1,0 +1,34 @@
+// Reset default settings
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  // That define 1rem = 10px
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: $color-grey-dark;
+  font-size: $font-size-regular;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: $font-size-small;
+  }
+
+  // @media only screen and (max-width: $bp-medium) {
+  //   font-size: 0.9rem;
+  // }
+}
+
+// Changing the focus style
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.9rem $color-primary-dark;
+}

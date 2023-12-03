@@ -1,0 +1,84 @@
+.footer {
+  min-height: 15vh;
+  font-size: $font-size-small;
+  padding: $padding-large 15rem $padding-medium 15rem;
+  background-color: $color-grey-light;
+  color: $color-grey-dark;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: $font-size-smaller;
+    padding: 3.5rem 7rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: $font-size-medium;
+    color: $color-primary;
+    margin-bottom: 3rem;
+  }
+  &__links {
+    list-style: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__link,
+  &__link:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__col {
+    &:not(:last-child) {
+      width: 100%;
+      border-right: 1px dotted $color-primary;
+    }
+    &-sections {
+      justify-self: center;
+    }
+    &-address {
+      & address > p:not(:last-child) {
+        margin-bottom: 1.2rem;
+      }
+    }
+    &-logo {
+      max-width: 20rem;
+      line-height: 1.6;
+      text-align: start;
+
+      @media only screen and (max-width: $bp-large) {
+        max-width: 18rem;
+      }
+      & a {
+        color: $color-grey-dark;
+      }
+    }
+  }
+  &__social {
+    &-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+    &-link {
+      font-size: $font-size-regular;
+      transition: all 0.3s;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: $font-size-small;
+      }
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

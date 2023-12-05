@@ -10,6 +10,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      gap: 10rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      gap: 8rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      gap: 5rem;
+    }
   }
 
   &_col {
@@ -18,8 +28,14 @@
     display: flex;
     flex-direction: column;
     &-title {
-      margin-bottom: $margin-medium;
+      margin-bottom: $margin-small;
       text-align: center;
+    }
+    &-title {
+      min-height: 9rem;
+      @media only screen and (max-width: $bp-medium) {
+        min-height: 6rem;
+      }
     }
   }
 }
@@ -47,6 +63,10 @@
     @media only screen and (max-width: $bp-large) {
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: $font-size-small;
+      margin-bottom: 1rem;
     }
   }
   &__bar {

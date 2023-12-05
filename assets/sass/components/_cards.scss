@@ -1,11 +1,11 @@
 .card {
   perspective: 150rem;
   position: relative;
-  min-height: 55vh;
+  height: 55vh;
+  min-height: 25vw;
 
   &__container {
     width: calc((100% - #{$margin-medium} * 2) / 3);
-    padding-top: $padding-medium;
     &:not(:last-child) {
       margin-right: $margin-medium;
     }
@@ -14,6 +14,7 @@
   &__side {
     width: 100%;
     height: 55vh;
+    min-height: 25vw;
     background-color: $color-grey-light;
     border-radius: 3px;
     position: absolute;
@@ -45,22 +46,13 @@
       justify-content: center;
       text-align: center;
 
-      &-title {
-        margin-bottom: $margin-medium;
-
-        @media only screen and (max-width: $bp-large) {
-          margin-bottom: $margin-small;
-        }
-
-        &:first-child {
-          margin-bottom: $margin-small;
-        }
-      }
-
       &-text {
         font-size: $font-size-medium;
         @media only screen and (max-width: $bp-large) {
           font-size: 1.5rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+          font-size: $font-size-small;
         }
       }
     }

@@ -9,6 +9,10 @@
     font-size: $font-size-smaller;
     padding: 3.5rem 7rem;
   }
+  @media only screen and (max-width: $bp-small) {
+    font-size: $font-size-smaller;
+    padding: 2rem 0;
+  }
 
   &__container {
     display: grid;
@@ -22,6 +26,10 @@
     font-size: $font-size-medium;
     color: $color-primary;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: $font-size-regular;
+    }
   }
   &__links {
     list-style: none;
@@ -56,8 +64,9 @@
       text-align: start;
 
       @media only screen and (max-width: $bp-large) {
-        max-width: 18rem;
+        max-width: 12rem;
       }
+
       & a {
         color: $color-grey-dark;
       }

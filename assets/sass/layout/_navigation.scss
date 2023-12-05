@@ -9,6 +9,9 @@
   @media only screen and (max-width: $bp-large) {
     padding: 0 $padding-medium;
   }
+  @media only screen and (max-width: $pb-phone-big) {
+    display: none;
+  }
 
   .sticky & {
     position: fixed;
@@ -44,5 +47,14 @@
     &:active {
       color: $color-primary;
     }
+  }
+
+  &__item:last-child > a:link,
+  &__item:last-child > a:visited {
+    color: $color-primary;
+  }
+  &__item:last-child > a:hover,
+  &__item:last-child > a:active {
+    color: $color-grey-light;
   }
 }

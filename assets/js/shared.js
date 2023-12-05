@@ -29,7 +29,7 @@ const navLinkTimeline = document.querySelector(".navigation__link-timeline");
 const navLinkHobbies = document.querySelector(".navigation__link-hobbies");
 const navLinkSkills = document.querySelector(".navigation__link-skills");
 // Buttons
-const btnContactMe = document.querySelector(".header__main--nav-cta");
+const btnContactMe = document.querySelector(".header__main--btn-cta");
 const btnSubmit = document.querySelector(".btn__submit");
 const btnReset = document.querySelector(".btn__reset");
 

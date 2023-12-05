@@ -13,8 +13,8 @@
     @media only screen and (max-width: $bp-large) {
       max-width: 85vw;
     }
-    @media only screen and (max-width: $bp-large) {
-      max-width: 85vw;
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 90vw;
     }
 
     &:nth-child(3) {
@@ -59,6 +59,12 @@
 
     @media only screen and (max-width: $bp-large) {
       font-size: 18rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 15rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 12rem;
     }
   }
   &_crypto--img-box {

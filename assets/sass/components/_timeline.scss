@@ -28,10 +28,14 @@
   }
   &_container {
     display: flex;
-    padding: 10px 40px;
+    padding: 1rem 4rem;
     position: relative;
     background-color: inherit;
     width: 50%;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0.5rem 1rem;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -43,7 +47,21 @@
       top: 5rem;
       border-radius: 50%;
       z-index: 1;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 2rem;
+        height: 2rem;
+        right: -1rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 1.7rem;
+        height: 1.7rem;
+        top: 3.5rem;
+        right: -0.8rem;
+      }
     }
+
     &-left {
       left: 0;
       justify-content: flex-end;
@@ -56,12 +74,23 @@
       left: 50%;
       &::after {
         left: -1.2rem;
+
+        @media only screen and (max-width: $bp-large) {
+          left: -1rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+          left: -0.8rem;
+        }
       }
     }
   }
   &_content {
     padding: $padding-small $padding-medium;
     position: relative;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: $padding-small;
+    }
 
     & h2 {
       margin-bottom: $margin-smaller;

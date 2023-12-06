@@ -1,7 +1,6 @@
 .mobile__nav {
   display: none;
   opacity: 0;
-  position: relative;
 
   @media only screen and (max-width: $pb-phone-big) {
     display: block;
@@ -22,19 +21,24 @@
   &_icon {
     height: 4.8rem;
     width: 4.8rem;
-    color: $color-grey-light;
+    &-light {
+      color: $color-grey-light;
+    }
+    &-dark {
+      color: $color-grey-dark;
+    }
 
     &-menu {
       display: block;
 
-      .mobile__nav-open & {
+      .nav__open & {
         display: none;
       }
     }
     &-close {
       display: none;
 
-      .mobile__nav-open & {
+      .nav__open & {
         display: block;
       }
     }

@@ -10,7 +10,26 @@
     padding: 0 $padding-medium;
   }
   @media only screen and (max-width: $pb-phone-big) {
-    display: none;
+    visibility: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(50%, -50%) scale(0.2);
+    width: 50vw;
+    height: 60vw;
+    padding: 0;
+    position: absolute;
+    top: 6.5rem;
+    right: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
+    transition: all 0.3s;
+  }
+
+  &__logo {
+    @media only screen and (max-width: $pb-phone-big) {
+      background-color: $color-black;
+    }
   }
 
   .sticky & {
@@ -28,6 +47,14 @@
     display: flex;
     list-style: none;
     gap: 4rem;
+
+    @media only screen and (max-width: $pb-phone-big) {
+      width: 100%;
+      flex-direction: column;
+      background-color: $color-black;
+      align-items: center;
+      padding-top: 2rem;
+    }
   }
   &__link {
     text-decoration: none;
@@ -56,5 +83,14 @@
   &__item:last-child > a:hover,
   &__item:last-child > a:active {
     color: $color-grey-light;
+  }
+}
+
+.nav__open .navigation {
+  @media only screen and (max-width: $pb-phone-big) {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(0) scale(1);
   }
 }

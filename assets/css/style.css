@@ -107,7 +107,23 @@ body {
       padding: 0 5rem; } }
   @media only screen and (max-width: 40em) {
     .navigation {
-      display: none; } }
+      visibility: none;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(50%, -50%) scale(0.2);
+      width: 50vw;
+      height: 60vw;
+      padding: 0;
+      position: absolute;
+      top: 6.5rem;
+      right: 5rem;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 999;
+      transition: all 0.3s; } }
+  @media only screen and (max-width: 40em) {
+    .navigation__logo {
+      background-color: #000; } }
   .sticky .navigation {
     position: fixed;
     top: 0;
@@ -121,6 +137,13 @@ body {
     display: flex;
     list-style: none;
     gap: 4rem; }
+    @media only screen and (max-width: 40em) {
+      .navigation__nav {
+        width: 100%;
+        flex-direction: column;
+        background-color: #000;
+        align-items: center;
+        padding-top: 2rem; } }
   .navigation__link {
     text-decoration: none;
     transition: all 0.3s; }
@@ -139,6 +162,13 @@ body {
   .navigation__item:last-child > a:hover,
   .navigation__item:last-child > a:active {
     color: #f8f9fa; }
+
+@media only screen and (max-width: 40em) {
+  .nav__open .navigation {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(0) scale(1); } }
 
 .header {
   min-height: 100vh;
@@ -730,8 +760,7 @@ body {
 
 .mobile__nav {
   display: none;
-  opacity: 0;
-  position: relative; }
+  opacity: 0; }
   @media only screen and (max-width: 40em) {
     .mobile__nav {
       display: block;
@@ -748,13 +777,16 @@ body {
         right: 3rem; } }
   .mobile__nav_icon {
     height: 4.8rem;
-    width: 4.8rem;
-    color: #f8f9fa; }
+    width: 4.8rem; }
+    .mobile__nav_icon-light {
+      color: #f8f9fa; }
+    .mobile__nav_icon-dark {
+      color: #040505; }
     .mobile__nav_icon-menu {
       display: block; }
-      .mobile__nav-open .mobile__nav_icon-menu {
+      .nav__open .mobile__nav_icon-menu {
         display: none; }
     .mobile__nav_icon-close {
       display: none; }
-      .mobile__nav-open .mobile__nav_icon-close {
+      .nav__open .mobile__nav_icon-close {
         display: block; }

@@ -1,5 +1,6 @@
 "use strict";
 
+const navEL = document.querySelector(".navigation");
 const navbar = document.querySelector(".navigation__nav");
 const allInterest = document.querySelectorAll(".section__interests-box");
 const interestCoding = document.querySelector(".section__interests_coding");
@@ -32,6 +33,7 @@ const navLinkSkills = document.querySelector(".navigation__link-skills");
 const btnContactMe = document.querySelector(".header__main--btn-cta");
 const btnSubmit = document.querySelector(".btn__submit");
 const btnReset = document.querySelector(".btn__reset");
+const btnNavMobile = document.querySelector(".mobile__nav_btn");
 
 // Functions
 const scrollTo = function (e) {
@@ -62,3 +64,7 @@ const obs = new IntersectionObserver(
     rootMargin: "-80px",
   }
 );
+
+btnNavMobile.addEventListener("click", function () {
+  document.body.classList.toggle("nav__open");
+});

@@ -19,7 +19,7 @@
     grid-template-columns: 1fr;
     min-width: 100vw;
     min-height: auto;
-    padding-bottom: $padding-medium;
+    padding: $padding-medium 0;
   }
 
   .sticky & {

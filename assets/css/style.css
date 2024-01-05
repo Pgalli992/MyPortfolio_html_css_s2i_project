@@ -208,7 +208,7 @@ body {
       grid-template-columns: 1fr;
       min-width: 100vw;
       min-height: auto;
-      padding-bottom: 5rem; } }
+      padding: 5rem 0; } }
   .sticky .header {
     margin-top: 6rem; }
   .header__img-box {
@@ -776,12 +776,12 @@ body {
     .card {
       display: flex;
       flex-direction: column;
-      height: max-content; } }
+      height: 40vh; } }
   .card__container {
     width: calc((100% - 6rem * 2) / 3); }
     @media only screen and (max-width: 40em) {
       .card__container {
-        width: 80vw; } }
+        width: 70vw; } }
     .card__container:not(:last-child) {
       margin-right: 6rem; }
       @media only screen and (max-width: 40em) {
@@ -806,7 +806,7 @@ body {
         position: static;
         -webkit-backface-visibility: visible;
         backface-visibility: visible;
-        height: max-content;
+        height: 100%;
         transform: translateY(0.5rem); } }
     .card__side_front-img {
       font-size: 20rem;
@@ -817,10 +817,6 @@ body {
       @media only screen and (max-width: 90em) {
         .card__side_front-img {
           font-size: 15rem; } }
-      @media only screen and (max-width: 40em) {
-        .card__side_front-img {
-          font-size: 10rem;
-          margin: 1.5rem 0; } }
     .card__side_back {
       transform: rotateY(180deg);
       padding: 5rem 2.5rem;
@@ -831,7 +827,7 @@ body {
       @media only screen and (max-width: 40em) {
         .card__side_back {
           transform: rotateY(0);
-          padding: 1rem 2.5rem 5rem 2.5rem; } }
+          padding: 1rem 2.5rem; } }
       .card__side_back-text {
         font-size: 2.2rem; }
         @media only screen and (max-width: 90em) {

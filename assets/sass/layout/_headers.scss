@@ -15,6 +15,13 @@
     gap: 2.2rem;
   }
 
+  @media only screen and (max-width: $bp-phone-big) {
+    grid-template-columns: 1fr;
+    min-width: 100vw;
+    min-height: auto;
+    padding-bottom: $padding-medium;
+  }
+
   .sticky & {
     // Adding the hight of navigation as a margin, to prevent the page 'jumping' when the navbar become 'sticky'
     margin-top: 6rem;
@@ -26,6 +33,11 @@
     justify-self: end;
     animation: moveInLeft 0.7s ease-out;
     grid-row: 1/3;
+
+    @media only screen and (max-width: $bp-phone-big) {
+      width: 50%;
+      justify-self: center;
+    }
   }
   & img {
     height: 100%;
@@ -46,6 +58,12 @@
     @media only screen and (max-width: $bp-large) {
       margin-right: 9rem;
     }
+
+    @media only screen and (max-width: $bp-phone-big) {
+      text-align: center;
+      margin-right: 0;
+      padding: 0 1rem;
+    }
   }
 
   & p {
@@ -53,6 +71,7 @@
   }
 
   &__btns-box {
+    text-align: center;
     justify-self: start;
     margin-top: 3rem;
     animation: moveInRight 0.7s ease-out;
@@ -63,17 +82,14 @@
     @media only screen and (max-width: $bp-medium) {
       margin-top: 2rem;
     }
-  }
-  &__social-links {
-    list-style: none;
-    display: flex;
-    gap: 2.4rem;
-  }
 
-  &__social-icon {
-    height: 1.8rem;
-    width: 1.8rem;
-    color: $color-grey-light;
+    @media only screen and (max-width: $bp-phone-big) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      justify-self: center;
+      margin-top: 0;
+    }
   }
 
   &__main--btn {
@@ -103,6 +119,9 @@
 
     &:not(:last-child) {
       margin-right: 2rem;
+      @media only screen and (max-width: $bp-phone-big) {
+        margin-right: 0;
+      }
     }
   }
 }

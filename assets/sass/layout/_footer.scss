@@ -30,6 +30,9 @@
     @media only screen and (max-width: $bp-small) {
       font-size: $font-size-regular;
     }
+    @media only screen and (max-width: $bp-phone-big) {
+      font-size: $font-size-small;
+    }
   }
   &__links {
     list-style: none;
@@ -52,10 +55,16 @@
     }
     &-sections {
       justify-self: center;
+      @media only screen and (max-width: $bp-phone-big) {
+        padding-top: 2rem;
+      }
     }
     &-address {
       & address > p:not(:last-child) {
         margin-bottom: 1.2rem;
+      }
+      @media only screen and (max-width: $bp-phone-big) {
+        padding: 2rem 0.5rem;
       }
     }
     &-logo {
@@ -65,6 +74,10 @@
 
       @media only screen and (max-width: $bp-large) {
         max-width: 12rem;
+      }
+
+      @media only screen and (max-width: $bp-phone-big) {
+        padding: 0 0.5rem;
       }
 
       & a {
@@ -89,5 +102,10 @@
         color: $color-primary;
       }
     }
+  }
+}
+.copyright {
+  @media only screen and (max-width: $bp-phone-big) {
+    font-size: 0.5rme;
   }
 }

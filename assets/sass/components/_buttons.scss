@@ -20,6 +20,7 @@
     }
     @media only screen and (max-width: $bp-medium) {
       padding: 0.8rem 1.6rem;
+      font-size: $font-size-regular;
     }
   }
 
@@ -46,5 +47,9 @@
 
   &:not(:last-child) {
     margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-phone-big) {
+      margin-right: 0;
+    }
   }
 }

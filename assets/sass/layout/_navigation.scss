@@ -1,38 +1,40 @@
 .navigation {
   padding: 0 $padding-large;
   display: flex;
+  width: 100%;
   height: 6rem;
   align-items: center;
   justify-content: space-between;
   background-color: $color-black;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 
   @media only screen and (max-width: $bp-large) {
     padding: 0 $padding-medium;
   }
-  @media only screen and (max-width: $pb-phone-big) {
+  @media only screen and (max-width: $bp-phone-big) {
     visibility: none;
     opacity: 0;
     pointer-events: none;
     transform: translate(50%, -50%) scale(0.2);
-    width: 50vw;
-    height: 60vw;
+    width: 100vw;
+    height: 100vh;
     padding: 0;
     position: absolute;
-    top: 6.5rem;
-    right: 5rem;
+    right: 0;
     flex-direction: column;
     justify-content: center;
-    z-index: 999;
     transition: all 0.3s;
   }
 
   &__logo {
-    @media only screen and (max-width: $pb-phone-big) {
+    @media only screen and (max-width: $bp-phone-big) {
       background-color: $color-black;
     }
   }
 
-  .sticky & {
+  .nav__open & {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -41,6 +43,10 @@
     padding-top: 0;
     padding-bottom: 0;
     z-index: 999;
+
+    @media only screen and (max-width: $bp-phone-big) {
+      background-color: $color-black;
+    }
   }
 
   &__nav {
@@ -48,7 +54,7 @@
     list-style: none;
     gap: 4rem;
 
-    @media only screen and (max-width: $pb-phone-big) {
+    @media only screen and (max-width: $bp-phone-big) {
       width: 100%;
       flex-direction: column;
       background-color: $color-black;
@@ -87,7 +93,7 @@
 }
 
 .nav__open .navigation {
-  @media only screen and (max-width: $pb-phone-big) {
+  @media only screen and (max-width: $bp-phone-big) {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;

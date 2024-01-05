@@ -4,6 +4,10 @@
   max-height: 80vh;
   padding: $padding-medium $padding-large;
 
+  @media only screen and (max-width: $bp-phone-big) {
+    max-height: max-content;
+  }
+
   &_container {
     height: 95vh;
     margin: 0 $margin-small;
@@ -20,6 +24,12 @@
     @media only screen and (max-width: $bp-small) {
       gap: 5rem;
     }
+    @media only screen and (max-width: $bp-phone-big) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, max-content);
+      gap: 10rem;
+      height: max-content;
+    }
   }
 
   &_col {
@@ -35,6 +45,9 @@
       min-height: 9rem;
       @media only screen and (max-width: $bp-medium) {
         min-height: 6rem;
+      }
+      @media only screen and (max-width: $bp-phone-big) {
+        min-height: 2rem;
       }
     }
   }

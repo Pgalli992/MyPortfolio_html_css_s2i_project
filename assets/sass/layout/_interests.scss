@@ -16,13 +16,23 @@
     @media only screen and (max-width: $bp-medium) {
       max-width: 90vw;
     }
+    @media only screen and (max-width: $bp-phone-big) {
+      flex-direction: column;
+    }
 
     &:nth-child(3) {
       flex-direction: row-reverse;
+      @media only screen and (max-width: $bp-phone-big) {
+        flex-direction: column;
+      }
     }
 
     &:not(:last-child) {
       margin-bottom: 15rem;
+
+      @media only screen and (max-width: $bp-phone-big) {
+        margin-bottom: $margin-medium;
+      }
     }
     &:hover > .section__interests--img-box {
       transform: scale(1.3);
@@ -46,6 +56,14 @@
       padding: 3.5rem 7rem;
     }
 
+    @media only screen and (max-width: $bp-phone-big) {
+      padding: 1rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-big) {
+      text-align: center;
+    }
+
     & * h3 {
       color: $color-grey-dark;
     }
@@ -65,6 +83,10 @@
     }
     @media only screen and (max-width: $bp-small) {
       font-size: 12rem;
+    }
+    @media only screen and (max-width: $bp-phone-big) {
+      font-size: 8rem;
+      align-self: center;
     }
   }
   &_crypto--img-box {

@@ -22,6 +22,11 @@
     padding: 5rem 10rem;
     position: relative;
 
+    @media only screen and (max-width: $bp-phone-big) {
+      padding: 0 1.5rem;
+      min-height: 70vh;
+    }
+
     &-abs {
       position: absolute;
       top: 50%;
@@ -30,6 +35,9 @@
       min-width: 45vw;
       @media only screen and (max-width: $bp-large) {
         min-width: 55vw;
+      }
+      @media only screen and (max-width: $bp-phone-big) {
+        min-width: 80vw;
       }
     }
   }

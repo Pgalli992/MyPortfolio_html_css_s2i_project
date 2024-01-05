@@ -21,6 +21,7 @@ const sectionInterests = document.querySelector(".section__interests");
 const sectionTimeline = document.querySelector(".section__timeline");
 
 // Navlink
+const navLink = document.querySelectorAll(".navigation__link");
 const navLinkWhoIAm = document.querySelector(".navigation__link-who");
 const navLinkInterests = document.querySelector(".navigation__link-interests");
 const navLinkExperience = document.querySelector(
@@ -39,32 +40,40 @@ const btnNavMobile = document.querySelector(".mobile__nav_btn");
 const scrollTo = function (e) {
   e.preventDefault();
   const id = e.target.getAttribute("href");
-  console.log(id);
+  // console.log(id);
   document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 };
 
 // Sticky navigation
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    // console.log(ent);
+// const obs = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     // console.log(ent);
 
-    if (!ent.isIntersecting) {
-      document.body.classList.add("sticky");
-    }
+//     if (!ent.isIntersecting) {
+//       document.body.classList.add("sticky");
+//     }
 
-    if (ent.isIntersecting) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "-80px",
-  }
-);
+//     if (ent.isIntersecting) {
+//       document.body.classList.remove("sticky");
+//     }
+//   },
+//   {
+//     // In the viewport
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "-80px",
+//   }
+// );
 
+// Make mobile nav work
 btnNavMobile.addEventListener("click", function () {
   document.body.classList.toggle("nav__open");
+});
+
+// Close navbar when link is clicked
+navLink.forEach(function (link) {
+  link.addEventListener("click", function () {
+    document.body.classList.toggle("nav__open");
+  });
 });

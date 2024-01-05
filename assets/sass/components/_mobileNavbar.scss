@@ -2,31 +2,26 @@
   display: none;
   opacity: 0;
 
-  @media only screen and (max-width: $pb-phone-big) {
+  @media only screen and (max-width: $bp-phone-big) {
     display: block;
     opacity: 1;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
   }
   &_btn {
     border: none;
     background: none;
     cursor: pointer;
 
-    @media only screen and (max-width: $pb-phone-big) {
-      z-index: 999;
-      position: absolute;
-      top: 2rem;
-      right: 3rem;
+    @media only screen and (max-width: $bp-phone-big) {
     }
   }
   &_icon {
     height: 4.8rem;
     width: 4.8rem;
-    &-light {
-      color: $color-grey-light;
-    }
-    &-dark {
-      color: $color-grey-dark;
-    }
+    color: $color-primary;
 
     &-menu {
       display: block;

@@ -132,8 +132,6 @@ body {
       width: 100vw;
       height: 100vh;
       padding: 0;
-      position: absolute;
-      right: 0;
       flex-direction: column;
       justify-content: center;
       transition: all 0.3s; } }

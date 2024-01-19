@@ -1,4 +1,5 @@
 .heading {
+  // h1
   &__primary {
     font-size: 8rem;
 
@@ -14,6 +15,7 @@
       font-size: 2rem;
     }
   }
+  // h2
   &__secondary {
     font-size: 4rem;
     color: $color-primary;
@@ -34,7 +36,7 @@
       font-size: $font-size-regular;
     }
   }
-
+  // h3
   &__tertiary {
     font-size: 3.6rem;
     color: $color-primary;

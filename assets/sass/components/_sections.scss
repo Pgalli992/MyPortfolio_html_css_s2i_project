@@ -24,10 +24,12 @@
       padding-left: 6.5rem;
     }
     @media only screen and (max-width: $bp-phone-big) {
+      font-size: $font-size-small;
       margin-bottom: $margin-smaller;
       padding-left: 0.5rem;
     }
 
+    // Red square
     &::before {
       content: " ";
       display: block;
@@ -39,12 +41,13 @@
       height: 1.2rem;
 
       @media only screen and (max-width: $bp-phone-big) {
-        width: 1rem;
-        height: 1rem;
-        top: 22%;
+        width: 0.8rem;
+        height: 0.8rem;
+        top: 19%;
       }
     }
 
+    // Titles on left side
     &-left::before {
       left: 10.8rem;
       @media only screen and (max-width: $bp-large) {
@@ -55,20 +58,17 @@
       }
     }
 
+    // Titles on right side
     &-right::before {
       right: 10.8rem;
+      @media only screen and (max-width: $bp-phone-big) {
+        right: 7.7rem;
+      }
     }
 
     &-hobbies {
       text-align: end;
       color: $color-grey-light;
-
-      &::before {
-        right: 10.8rem;
-      }
-
-      @media only screen and (max-width: $bp-phone-big) {
-      }
     }
   }
 }

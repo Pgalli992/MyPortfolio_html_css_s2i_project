@@ -80,11 +80,14 @@
     padding-left: 0.5rem;
     transition: all 0.3s;
 
+    // Underlined green - if wrong
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-      border-bottom: 3px solid #55c57a;
+      border-bottom: 3px solid $color-green-light;
     }
+
+    // Underlined red - if wrong
     &:focus:invalid {
       border-bottom: 3px solid $color-primary;
     }

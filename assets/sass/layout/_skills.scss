@@ -27,7 +27,7 @@
     @media only screen and (max-width: $bp-phone-big) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, max-content);
-      gap: 10rem;
+      gap: 8rem;
       height: max-content;
     }
   }
@@ -57,6 +57,10 @@
   &__container {
     &:not(:last-child) {
       margin-bottom: $margin-smaller;
+
+      @media only screen and (max-width: $bp-phone-big) {
+        margin-bottom: $margin-smaller;
+      }
     }
     &_programming {
       max-height: calc((100% - #{$padding-medium} * 2) / 4);

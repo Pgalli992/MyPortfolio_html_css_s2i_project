@@ -1,4 +1,4 @@
-assets/node_modules
+./assets/node_modules/*got
 
 # OS generated files #
 ######################
